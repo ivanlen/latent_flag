@@ -20,15 +20,24 @@ The reason why I scrapped their twitter account is because they have special edi
 I used the notebook [preprocess_images.ipynb](./preprocess_images.ipynb) to resize all the images to squared shape and some other images preprocessing.
 
 ## Autoencoder
-Then I trained a very simple convolutional autoencoder following the first part of the notebook [autoencoder_generation_and_tsne_representation.ipynb](./autoencoder_generation_and_tsne_representation.ipynb).
+Then I trained a very simple convolutional autoencoder following the notebook [autoencoder.ipynb](./autoencoder.ipynb).
 
 
 ## TSNE representation
-The second part of the notebook
-[autoencoder_generation_and_tsne_representation.ipynb](./autoencoder_generation_and_tsne_representation.ipynb) contains the code snippets used to generate the latent space of the real flags and plot the TSNE representation of the images.
+In the notebook
+[latente_space.ipynb](./latent_space.ipynb) contains the code snippets used to generate the latent space of the real flags and plot the TSNE representation of the flags.
+
+The TSNE-latent representation of the images at first glance looks quite similar to the TSNE representation of the real images, however there are some differences.
 
 
+![TNSE-latent representation of the country flags](./tsne_latent_6000.png)
 
+At first glance the images are clustered also mainly by colors.
+However the flags that have horizontal stripes (left region of the plot) have a greater variety of colors, this applies also for the vertical ones (right region of the plot). Structure of the flags is important in the latent space.
+
+One thing that I liked is that the flags that contain the UK flag inside are quite close independently of the color (blue, light blue, and red, and UK).
+
+__Work in progress, to be continued...__
 
 
 
